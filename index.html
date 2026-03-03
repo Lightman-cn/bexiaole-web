@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+  <meta name="theme-color" content="#1a2b4a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AI伯乐">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta name="referrer" content="no-referrer">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI伯乐网 - 智能猎头招聘平台">
+  <meta property="og:description" content="智能猎头招聘平台，为企业和人才提供高效的招聘服务">
+  <meta property="og:image" content="/logo-ai.png">
+  
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <!-- PWA manifest -->
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <!-- Preconnect to external resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://hm.baidu.com">
+  <link rel="dns-prefetch" href="https://www.clarity.ms">
+  
+  <!-- Font optimization -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <title>AI伯乐网 - 智能猎头招聘平台</title>
+  
+  <!-- 百度统计 -->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?YOUR_BAIDU_SITE_ID";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "YOUR_CLARITY_PROJECT_ID");
+  </script>
+  
+  <!-- External scripts -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    /* Critical CSS inline */
+    body { 
+      font-family: 'Noto Sans SC', sans-serif; 
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
+    }
+    .gradient-bg { background: linear-gradient(135deg, #1a2b4a 0%, #4a5c7a 100%); }
+    .gradient-gold { background: linear-gradient(135deg, #c4a35a 0%, #d4b36a 100%); }
+    .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    
+    /* Mobile optimizations */
+    @media (max-width: 768px) {
+      body {
+        -webkit-text-size-adjust: 100%;
+      }
+    }
+    
+    /* PWA install prompt hidden by default */
+    .pwa-install-prompt {
+      display: none;
+    }
+    
+    /* Touch action for better mobile experience */
+    * {
+      touch-action: manipulation;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="app.js"></script>
+</body>
+</html>

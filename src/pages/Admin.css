@@ -1,0 +1,67 @@
+/* 平板触摸优化 */
+
+/* 增大触摸目标 */
+@media (pointer: coarse) {
+  button,
+  [role="button"],
+  input,
+  select,
+  textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* 增大按钮内边距 */
+  button {
+    padding: 12px 20px;
+  }
+  
+  /* 增大图标按钮 */
+  button[size="icon"] {
+    width: 48px;
+    height: 48px;
+  }
+  
+  /* 列表项增大间距 */
+  .job-card,
+  .company-card {
+    padding: 20px;
+  }
+}
+
+/* 平板横屏优化 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .admin-toolbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .admin-toolbar > * {
+    margin-bottom: 8px;
+  }
+}
+
+/* 软键盘弹出时的处理 */
+@media (max-height: 500px) {
+  .dialog-content {
+    max-height: 80vh;
+  }
+}
+
+/* 触摸反馈 */
+button:active,
+[role="button"]:active {
+  transform: scale(0.98);
+  transition: transform 0.1s;
+}
+
+/* 防止触摸时的误操作 */
+input, textarea {
+  font-size: 16px; /* 防止iOS缩放 */
+}
+
+/* 滚动优化 */
+.scroll-container {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
