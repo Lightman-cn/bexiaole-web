@@ -4,6 +4,8 @@ import { VitePWA } from 'vite-plugin-pwa'
 import path from 'path'
 
 export default defineConfig({
+  // GitHub Pages 部署路径
+  base: '/bexiaole-web/',
   plugins: [
     react(),
     VitePWA({
@@ -17,8 +19,8 @@ export default defineConfig({
         background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait-primary',
-        scope: '/',
-        start_url: '/',
+        scope: '/bexiaole-web/',
+        start_url: '/bexiaole-web/',
         icons: [
           {
             src: 'pwa-192x192.png',
