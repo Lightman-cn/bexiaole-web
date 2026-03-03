@@ -1,0 +1,4 @@
+# PWA Robots.txt
+User-agent: *
+Allow: /
+Sitemap: /sitemap.xml
