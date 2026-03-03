@@ -22,9 +22,6 @@ const RegisterModal = lazy(() => import('./components/RegisterModal'));
 // 懒加载 Admin 页面
 const Admin = lazy(() => import('./pages/Admin'));
 
-// 懒加载服务
-const { getJobs, getCompanies } = lazy(() => import('./services/strapiApi'));
-
 // 本地存储键名（用于缓存）
 const STORAGE_KEYS = {
   jobs: 'aibole_jobs',
